@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import '~js-datepicker/src/datepicker';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height : 100%;
+    margin : 0;
+    padding: 0;
+
+}
+
+body {
+position: relative;
+background : linear-gradient(45deg, #faf9f9 0%, #deeef1 100%) no-repeat fixed;
+font-family: 'Poppins', 'Arial', sans-serif;
+// padding    : 2rem;
+.contact{
+    div{
+        position: fixed;
+        bottom: 0%;
+        }
+    }
+}
+
+nav {
+    position: fixed;
+    background: white;
+    top: 0;
+    right: 0;
+    padding-left: 44rem;
+    z-index: 2;
+    width: 100vw;
+@media (max-width: 1300px) {
+padding-left: 25rem;
+}
+@media (max-width: 650px) {
+    padding-left: 15rem;
+    }
+
+    button,
+    .btn {
+        background   : transparent;
+        border       : 0;
+        border-radius: 0;
+        box-shadow   : none !important;
+        font-size    : 1.5rem;
+        outline      : none;
+        padding      : 0.5rem 1rem;
+        color: rgb(84, 26, 99);
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .btn.btn-active {
+        background-color: #f4b700;
+        text-decoration : underline;
+    }
+}
+
+main {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 2rem 0;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    ul {
+        list-style: none;
+        padding   : 0;
+        margin: 10rem;
+
+        li {
+            background-color: #5b8092;
+            box-shadow      : #00576e 0 2px 8px 2px;
+            color           : #fff;
+            padding         : 1rem;
+
+            footer {
+                display        : flex;
+                align-items    : center;
+                justify-content: flex-end;
+
+                &>*+* {
+                    margin-left: 1rem;
+                }
+            }
+
+            button,
+            .btn {
+                background: transparent;
+                border    : 1px solid #fff;
+                color     : #fff;
+            }
+        }
+
+        .liRooms+.liRooms {
+            margin-top: 2rem;
+        }
+        .liTreatments{
+            margin: 0%;
+            position: absolute;
+            display: block;
+            height: 18rem;
+            width: 28rem;
+            background-size: cover;
+
+
+        }
+        .liTreatments:nth-child(1){
+            background-image: url("../src/images/spa-kamienie.jpg");
+            top: 5rem;
+            left: 2.5rem;
+            @media(max-width: 1500px){
+                left: 5rem;
+            }
+            @media(max-width:1024px){
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(2){
+            background-image: url("../src/images/maseczka.jpg");
+            top: 5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            @media(max-width: 1500px){
+            left: 70%;
+            }
+            @media(max-width:1024px){
+                top: 30rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(3){
+            background-image: url("../src/images/pedicure.jpg");
+            margin-right: 2.5rem;
+            top: 5rem;
+            right: 0;
+            @media(max-width: 1500px){
+                top:30rem;
+                margin-right:!important;
+                left: 5rem;
+                
+            }
+            @media(max-width:1024px){
+                top: 55rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(4){
+            background-image: url("../src/images/acupuncture-g330d33231_1920.jpg");
+            top: 30rem;
+            margin-right: 2.5rem;
+            right: 0;
+            @media(max-width: 1500px){
+                margin-right: !important;
+                right: 10%;
+            }
+            @media(max-width:1024px){
+                top: 80rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(5){
+            background-image: url("../src/images/sauna.jpg");
+            top: 30rem;
+            left: 50%;
+            transform: translateX(-50%);
+            @media(max-width: 1500px){
+                top: 55rem;
+                left: 23%;
+            }
+            @media(max-width:1024px){
+                top: 105rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+        .liTreatments:nth-child(6){
+            background-image: url("../src/images/singing-bowls-gbb2e07f2c_1920.jpg");
+            top: 30rem;
+            left: 2.5rem;
+            @media(max-width: 1500px){
+                top: 55rem;
+                left: 53%;
+            }
+            @media(max-width:1024px){
+                top: 130rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    article {
+        position: relative;
+        top:8rem;
+        $bg-color-1: #e3e8ef;
+        $bg-color-2: #edeef0;
+
+        background: repeating-linear-gradient(45deg, $bg-color-1, $bg-color-1 10px, $bg-color-2 10px, $bg-color-2 20px);
+        box-shadow: #00576e 0 2px 8px 2px;
+        margin    : 2em 1em;
+        padding   : 1rem;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            background: #829aae;
+            color     : white;
+            margin    : 0;
+            padding   : 1rem 0.5rem;
+        }
+    }
+    section{
+        color: rgb(84, 26, 99);
+    h2{
+        color: #6a5b2f;
+    }
+        .text{
+            position: absolute;
+            top: 35rem;
+            width: 40vw;
+            padding: 2rem;
+        }
+        .ofert{
+            position: absolute;
+            padding: 2rem;
+            height: 32rem;
+            width: 40vw;
+            top: 45rem;
+            right: 0;
+        }
+        .bgcHotel{
+            position: absolute;
+            top: 3.3rem;
+            left: 0;
+            z-index: 1;
+            background-image: url("../src/images/spa-g9bd94c06a_1920.jpg");
+            background-size: cover;
+            background-position: center bottom;
+            background-attachment: fixed;
+            height: 22rem;
+            width: 100vw;
+            @media (min-width: 1920px){
+                background-position: bottom;
+            }
+            @media(min-width: 1024px){
+                background-size: auto;
+                background-position: bottom;
+            }
+        }
+    .greeting{
+        position: absolute;
+        left: 50%;
+        top: 28rem;
+        transform: translateX(-50%);
+    }
+    .divRooms{
+        position: fixed;
+        top: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .divTreatments{
+        position: fixed;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .divCalendar{
+        position: absolute;
+        top: 15rem;
+        left: 50%;
+        transform: translateX(-50%);
+        input{
+            margin: 1rem;
+        }
+    }
+    .buttonNav{
+        border: black solid .1rem;
+        position: absolute;
+        top: 20rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+    }
+    .buttonNav:hover{
+        background-color: #5b8092;
+        color: #fff;
+    }
+    .divRoomDetail{
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .divTreatmentDetails{
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .table{
+        margin-top: 5rem;
+    }
+    .divCart{
+    position: relative;
+    top: 4rem;
+}
+
+    }
+
+}
+
